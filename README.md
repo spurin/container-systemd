@@ -27,7 +27,7 @@ See the individual branches for sources.  The image can be executed directly (wi
 
 Convenient GitHub links for where I make use of these source images -
 
-* Customised with SSHD and ttyd to mimic virtual machine distributions - [spurin/container-systemd-sshd-ttyd](https://github.com/spurin/container-systemd-sshd-ttyd)
+* Customised with sshd and ttyd to mimic virtual machine distributions - [spurin/container-systemd-sshd-ttyd](https://github.com/spurin/container-systemd-sshd-ttyd)
 
 ## Credits and Thanks
 
