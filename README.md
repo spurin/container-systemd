@@ -1,17 +1,17 @@
-## ✨ Popular linux distributions configured with systemd  (centos_8)✨
+## ✨ Popular linux distributions configured with systemd  (centos_stream9)✨
 
 Popular linux distributions with Systemd.  Superb for use with Docker 🐋
 
 ## Overview
 
-Source Dockerfile for running Ubuntu 21.10 with systemd in a convenient container.  The image relating to this Dockerfile is available for both amd64 and arm64 on Docker Hub - ```spurin/container-systemd:centos_8```
+Source Dockerfile for running Ubuntu 21.10 with systemd in a convenient container.  The image relating to this Dockerfile is available for both amd64 and arm64 on Docker Hub - ```spurin/container-systemd:centos_stream9```
 
 ## Examples
 
 Run a systemd container and execute a bash shell, cleanup on exit -
 
 ```
-docker run -it --rm --privileged spurin/container-systemd:centos_8 /bin/bash
+docker run -it --rm --privileged spurin/container-systemd:centos_stream9 /bin/bash
 ```
 
 ---
@@ -20,7 +20,7 @@ Run a systemd container in the background (useful for further customisation, i.e
 for another container where additional systemd service files are added) -
 
 ```
-CONTAINER=$(docker run -d --privileged spurin/container-systemd:centos_8)
+CONTAINER=$(docker run -d --privileged spurin/container-systemd:centos_stream9)
 docker exec -it ${CONTAINER} bash
 ```
 

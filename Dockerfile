@@ -1,5 +1,5 @@
 # Main Build
-FROM centos:8
+FROM quay.io/centos/centos:stream9
 
 # Install systemd
 RUN yum install -y systemd systemd-udev \
