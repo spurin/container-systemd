@@ -1,4 +1,4 @@
-## ✨ Popular linux distributions configured with systemd (centos_stream9)✨
+## ✨ Popular linux distributions configured with systemd (centos_stream9) ✨
 
 Popular linux distributions with systemd.  Superb for use with Docker 🐋
 
