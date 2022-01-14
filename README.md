@@ -31,6 +31,6 @@ Convenient GitHub links for where I make use of these source images -
 
 ## Credits and Thanks
 
-* @bothaf and @dazzla76 - Thanks for your support in general and in the testing of these images
+* [@bothaf](https://github.com/bothaf) and [@dazzla76](https://github.com/dazzla76) - Thanks for your support in general and in the testing of these images
 
-* @AkihiroSuda - Thanks for your efforts on [Github](https://github.com/AkihiroSuda/containerized-systemd) and the feedback you provided to my question regarding /sys/fs/cgroup.  In testing, the clarification of the use of /sys/fs/cgroup helped a lot and this bridge cgroups v1 and v2 compatibility.  Also appreciate your docker-entrypoint.sh script that I've made use of in this project 🚀
+* [@AkihiroSuda](https://github.com/AkihiroSuda) - Thanks for your efforts on [Github](https://github.com/AkihiroSuda/containerized-systemd) and the feedback you provided to my question regarding /sys/fs/cgroup.  In testing, the clarification of the use of /sys/fs/cgroup helped a lot and this bridge cgroups v1 and v2 compatibility.  Also appreciate your docker-entrypoint.sh script that I've made use of in this project 🚀
