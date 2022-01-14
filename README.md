@@ -1,4 +1,4 @@
-## ✨ Popular linux distributions configured with systemd (ubuntu_20.04)✨
+## ✨ Popular linux distributions configured with systemd (ubuntu_20.04) ✨
 
 Popular linux distributions with systemd.  Superb for use with Docker 🐋
 
