@@ -1,6 +1,6 @@
-## ✨ Popular linux distributions configured with systemd  (centos_stream9)✨
+## ✨ Popular linux distributions configured with systemd (centos_stream9)✨
 
-Popular linux distributions with Systemd.  Superb for use with Docker 🐋
+Popular linux distributions with systemd.  Superb for use with Docker 🐋
 
 ## Overview
 
@@ -21,14 +21,14 @@ for another container where additional systemd service files are added) -
 
 ```
 CONTAINER=$(docker run -d --privileged spurin/container-systemd:centos_stream9)
-docker exec -it ${CONTAINER} bash
+docker exec -it $CONTAINER bash
 ```
 
 Terminate and Remove -
 
 ```
-docker stop ${CONTAINER}
-docker rm ${CONTAINER}
+docker stop $CONTAINER
+docker rm $CONTAINER
 ```
 
 ## Build
