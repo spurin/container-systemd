@@ -4,7 +4,7 @@ Popular linux distributions with Systemd.  Superb for use with Docker 🐋
 
 ## Overview
 
-Source Dockerfile for running Ubuntu 21.10 with systemd in a convenient container.  The image relating to this Dockerfile is available for both amd64 and arm64 on Docker Hub - ```spurin/container-systemd:centos_stream9```
+Source Dockerfile for running CentOS Stream 9 with systemd in a convenient container.  The image relating to this Dockerfile is available for both amd64 and arm64 on Docker Hub - ```spurin/container-systemd:centos_stream9```
 
 ## Examples
 
