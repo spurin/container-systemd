@@ -64,5 +64,4 @@ else
 fi
 
 # Start systemd
-echo "$0: starting $systemd $systemd_args"
 exec $systemd $systemd_args
