@@ -1,6 +1,10 @@
 # Main Build
 FROM centos:8
 
+# Fix for Centos8 EOL
+RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-Linux-* &&\
+    sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-Linux-*
+
 # Install systemd
 RUN yum install -y systemd systemd-udev \
     && yum clean all
