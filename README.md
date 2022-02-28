@@ -1,5 +1,8 @@
 ## ✨ Popular linux distributions configured with systemd ✨
 
+[![Follow](https://shields.io/twitter/follow/jamesspurin?label=Follow)](https://twitter.com/jamesspurin)
+[![GitHub Stars](https://shields.io/docker/pulls/spurin/container-systemd)](https://hub.docker.com/r/spurin/container-systemd)
+
 Popular linux distributions with systemd.  Superb for use with Docker 🐋
 
 These are the base source of the lab container images used in the [Dive Into Ansible Lab](https://github.com/spurin/diveintoansible-lab)
