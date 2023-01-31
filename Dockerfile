@@ -12,7 +12,7 @@
 #
 # As a workaround we build a customised version of systemd, with legacy as the 
 # default hierarchy option
-FROM ubuntu:20.04 as systemdbuild
+FROM ubuntu:22.04 as systemdbuild
 ENV DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /build_systemd
@@ -30,7 +30,7 @@ RUN perl -p -i -e 's/^# deb-src/deb-src/g' /etc/apt/sources.list \
     && DEB_BUILD_OPTIONS=nocheck debuild -us -uc -b
 
 # Main Build
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 # Copy the customised version of systemd to /tmp
 COPY --from=systemdbuild /build_systemd/systemd_*.deb /tmp
