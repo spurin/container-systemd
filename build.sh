@@ -10,7 +10,7 @@ DRIVER_OPT='--driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=10000000 --driver-opt en
 while [[ $# -gt 0 ]]; do
    case $1 in
    -l | --local)
-      docker build -t spurin/${PWD##*/}:$(git branch | grep '*' | awk {'print $2'}) .
+      docker buildx build --builder "$(docker buildx create --driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=10000000 --driver-opt env.BUILDKIT_STEP_LOG_MAX_SPEED=10000000)" -t spurin/${PWD##*/}:$(git branch | grep '*' | awk {'print $2'}) .
       exit
       ;;
    -c | --crossbuild)
