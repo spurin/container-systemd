@@ -15,6 +15,12 @@
 FROM ubuntu:21.10 as systemdbuild
 ENV DEBIAN_FRONTEND=noninteractive
 
+# Release is EOL, update apt sources
+RUN sed -i -r 's/([a-z]{2}.)?archive.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list \
+ && sed -i -r 's/ports.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list \
+ && sed -i -r 's/ubuntu-ports/ubuntu/g' /etc/apt/sources.list \
+ && sed -i -r 's/security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+
 WORKDIR /build_systemd
 
 # Download the source code for systemd and build a .deb package
@@ -31,6 +37,12 @@ RUN perl -p -i -e 's/^# deb-src/deb-src/g' /etc/apt/sources.list \
 
 # Main Build
 FROM ubuntu:21.10
+
+# Release is EOL, update apt sources
+RUN sed -i -r 's/([a-z]{2}.)?archive.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list \
+ && sed -i -r 's/ports.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list \
+ && sed -i -r 's/ubuntu-ports/ubuntu/g' /etc/apt/sources.list \
+ && sed -i -r 's/security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 
 # Copy the customised version of systemd to /tmp
 COPY --from=systemdbuild /build_systemd/systemd_*.deb /tmp
