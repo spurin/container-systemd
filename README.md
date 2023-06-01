@@ -11,7 +11,7 @@ Source Dockerfile for running Ubuntu 20.04 with systemd in a convenient containe
 Run a systemd container and execute a bash shell, cleanup on exit -
 
 ```
-docker run -it --rm --privileged spurin/container-systemd:ubuntu_20.04 /bin/bash
+docker run -it --rm --privileged spurin/container-systemd:ubuntu_20.04_legacy /bin/bash
 ```
 
 ---
@@ -20,7 +20,7 @@ Run a systemd container in the background (useful for further customisation, i.e
 for another container where additional systemd service files are added) -
 
 ```
-CONTAINER=$(docker run -d --privileged spurin/container-systemd:ubuntu_20.04)
+CONTAINER=$(docker run -d --privileged spurin/container-systemd:ubuntu_20.04_legacy)
 docker exec -it $CONTAINER bash
 ```
 
