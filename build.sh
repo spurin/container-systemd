@@ -1,10 +1,10 @@
 # Variables
-LOCAL_NODE=macmini_m1
-REMOTE_NODE=macpro
-REMOTE_NODE_SSH=ssh://james@jamess-mac-pro.local
-LOCAL_ARCH=linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/mips64le,linux/mips64,linux/arm/v7,linux/arm/v6
-REMOTE_ARCH=linux/amd64,linux/386
-DRIVER_OPT='--driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=10000000 --driver-opt env.BUILDKIT_STEP_LOG_MAX_SPEED=10000000'
+LOCAL_NODE=${LOCAL_NODE:-local}
+REMOTE_NODE=${REMOTE_NODE:-remote}
+REMOTE_NODE_SSH=${REMOTE_NODE_SSH:-ssh://root@1.2.3.4}
+LOCAL_ARCH=${LOCAL_ARCH:-linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/mips64le,linux/mips64,linux/arm/v7,linux/arm/v6}
+REMOTE_ARCH=${REMOTE_ARCH:-linux/amd64,linux/386}
+DRIVER_OPT=${DRIVER_OPT:-'--driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=10000000 --driver-opt env.BUILDKIT_STEP_LOG_MAX_SPEED=10000000'}
 
 # Parse command line options and build accordingly
 while [[ $# -gt 0 ]]; do
