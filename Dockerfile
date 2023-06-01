@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-# Install our customised systemd
+# Install systemd
 RUN apt-get update \
     && apt-get install -y systemd \
     && apt-get clean \
