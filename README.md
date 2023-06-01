@@ -1,10 +1,10 @@
-## ✨ Popular linux distributions configured with systemd (ubuntu_20.04) ✨
+## ✨ Popular linux distributions configured with systemd (ubuntu_20.04_legacy) ✨
 
 Popular linux distributions with systemd.  Superb for use with Docker 🐋
 
 ## Overview
 
-Source Dockerfile for running Ubuntu 20.04 with systemd in a convenient container.  The image relating to this Dockerfile is available for both amd64 and arm64 on Docker Hub - ```spurin/container-systemd:ubuntu_20.04```
+Source Dockerfile for running Ubuntu 20.04 with systemd in a convenient container.  The image relating to this Dockerfile is available for both amd64 and arm64 on Docker Hub - ```spurin/container-systemd:ubuntu_20.04_legacy```
 
 ## Examples
 
