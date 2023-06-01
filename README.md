@@ -22,7 +22,7 @@ Whilst building the original Dive Into Ansible Lab, over the years I've encounte
 * Windows (Docker Desktop, default WSL)
 * Windows (Docker Desktop, custom WSL)
 
-With the custom builds of systemd in the ubuntu based images, these images have in testing, worked as expected across different configurations as expected.  The use base is over 20K+ Students across 125+ countries.
+With the custom builds of systemd in the ubuntu based images (ubuntu branches with _default), these images have in testing, worked as expected across different configurations as expected.  The use base is over 20K+ Students across 125+ countries.
 
 See the individual branches for sources.  The image can be executed directly (with for example, ```/bin/bash```) or, can be used as a systemd base for other projects.  Execution examples are in the README.md
 
