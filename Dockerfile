@@ -6,7 +6,7 @@ RUN sed -i -r 's/([a-z]{2}.)?archive.ubuntu.com/old-releases.ubuntu.com/g' /etc/
  && sed -i -r 's/ubuntu-ports/ubuntu/g' /etc/apt/sources.list \
  && sed -i -r 's/security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 
-# Install our customised systemd
+# Install systemd
 RUN apt-get update \
     && apt-get install -y systemd \
     && apt-get clean \
