@@ -24,6 +24,8 @@ Whilst building the original Dive Into Ansible Lab, over the years I've encounte
 
 With the custom builds of systemd in the ubuntu based images (ubuntu branches with _default), these images have in testing, worked as expected across different configurations as expected.  The use base is over 20K+ Students across 125+ countries.
 
+Up until recently (ubuntu_23.04), it was possible to build an image with a custom systemd that used the legacy hierarchy.  This as expected, appears to be deprecated from ubuntu 23.04 onwards.  That said, hopefully by the point that this or even when 24.04 becomes an adopted standard, the requirement to use the _legacy images for most users systems (with the progression to linux distributions that supports cgroups v2 natively) will demise.
+
 See the individual branches for sources.  The image can be executed directly (with for example, ```/bin/bash```) or, can be used as a systemd base for other projects.  Execution examples are in the README.md
 
 ## See Also
