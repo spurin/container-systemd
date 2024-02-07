@@ -11,7 +11,7 @@ This container image is designed to be used independently with the likes of ```/
 
 ## Overview
 
-Up until recently (ubuntu_23.04), it was possible to build an image with a custom systemd that used the legacy hierarchy.  This as expected, appears to be deprecated from ubuntu 23.04 onwards.  That said, hopefully by the point that this or even when 24.04 becomes an adopted standard, the requirement to use _legacy images for most users systems (with the progression to linux distributions that supports cgroups v2 natively) will demise.
+Up until recently (ubuntu_23.04), it was possible to build an image with a custom systemd that used the legacy hierarchy.  This as expected, appears to be deprecated from ubuntu 23.04 onwards.  That said, hopefully by the point that this or even when 24.04 becomes an adopted standard, the requirement to fall back on the _legacy images (with the progression to linux distributions that supports cgroups v2 natively) will demise.
 
 See the individual branches for sources.  The image can be executed directly (with for example, ```/bin/bash```) or, can be used as a systemd base for other projects.  Execution examples are in the README.md
 
